@@ -61,7 +61,7 @@ java -jar CucumberSeleniumDemo.jar
 
 This tests are developed with cucumber framework with the following structure:
 
-Amazon.feature
+Search.feature
 
 This file has the test scenarios that were developed to test the following requirements. 
 
@@ -145,7 +145,7 @@ Feature: Buy Action
       	at org.junit.Assert.assertTrue(Assert.java:41)
       	at org.junit.Assert.assertTrue(Assert.java:52)
       	at stepDefinition.Test_Steps.searchFrom(Test_Steps.java:225)
-      	at ?.And I search from date comment(C:/Users/Joana Silva/workspace/QA/Feature/Search.feature:72)
+      	at ?.And I search from date comment(Search.feature:72)
 
   Background:                
     Given I open the page url
