@@ -45,7 +45,7 @@ javac 1.8.0_191
 
 ## Running the tests
 
-To run the test suite, download the project as a zip file.
+To run the test suite, download the project as a zip file [https://github.com/sjoana/CucumberSeleniumDemo/archive/master.zip].
 Follow this steps:
 
 1. Extract the zip file to a folder;
