@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="147.477092">
+<testcase classname="Amazon Search" name="Create account with an existent user" time="10.574214">
+<system-out><![CDATA[Given I open the page url...................................................passed
+Given I create a new account................................................passed
+Then User already exists....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Search" name="Login with wrong credentials" time="9.023637">
+<system-out><![CDATA[Given I open the page url...................................................passed
+Given I make login into the page............................................passed
+Then The login is wrong.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Search" name="Login with correct credentials" time="9.832114">
+<system-out><![CDATA[Given I open the page url...................................................passed
+Given I make login into the page............................................passed
+Then The login is correct...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Search" name="Search from book author" time="14.350651">
+<system-out><![CDATA[Given I open the page url...................................................passed
+Given I make login into the page............................................passed
+And I make a search for a book..............................................passed
+And I check the author......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Search" name="Search from user comment" time="32.303">
+<system-out><![CDATA[Given I open the page url...................................................passed
+Given I make login into the page............................................passed
+And I make a search for a book..............................................passed
+And I search from user comment..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Search" name="Search from rating comment" time="14.987508">
+<system-out><![CDATA[Given I open the page url...................................................passed
+Given I make login into the page............................................passed
+And I make a search for a book..............................................passed
+And I search from rating comment............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Search" name="Search from date comment" time="23.938305">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at stepDefinition.Test_Steps.searchFrom(Test_Steps.java:252)&#13;&#10;&#9;at ✽.I search from date comment(src/test/resource/Search.feature:72)&#13;&#10;"><![CDATA[Given I open the page url...................................................passed
+Given I make login into the page............................................passed
+And I make a search for a book..............................................passed
+And I search from date comment..............................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepDefinition.Test_Steps.searchFrom(Test_Steps.java:252)
+	at ✽.I search from date comment(src/test/resource/Search.feature:72)
+]]></failure>
+</testcase>
+<testcase classname="Amazon Search" name="Perform a search" time="13.892265">
+<system-out><![CDATA[Given I open the page url...................................................passed
+Given I make login into the page............................................passed
+And I make a search.........................................................passed
+And I search from description...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon Search" name="Take a screenshot" time="18.575398">
+<system-out><![CDATA[Given I open the page url...................................................passed
+Given I make login into the page............................................passed
+And I make a search.........................................................passed
+Then I take a screenshot in the trailer.....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

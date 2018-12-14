@@ -1,0 +1,1118 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5754034073,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the page url",
+            "match": {
+              "location": "Test_Steps.openURL(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "url"
+                ]
+              },
+              {
+                "cells": [
+                  "http://www.amazon.co.uk"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "Create account with an existent user",
+        "description": "",
+        "id": "amazon-search;create-account-with-an-existent-user",
+        "after": [
+          {
+            "result": {
+              "duration": 2325232976,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2431403972,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I create a new account",
+            "match": {
+              "location": "Test_Steps.createAccount(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "joanasilva",
+                  "forrandomtestsandstuff@gmail.com",
+                  "Password!123"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 43504876,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User already exists",
+            "match": {
+              "location": "Test_Steps.verifySuccessful(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "result"
+                ]
+              },
+              {
+                "cells": [
+                  "E-mail address already in use"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4872772724,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the page url",
+            "match": {
+              "location": "Test_Steps.openURL(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "url"
+                ]
+              },
+              {
+                "cells": [
+                  "http://www.amazon.co.uk"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Login with wrong credentials",
+        "description": "",
+        "id": "amazon-search;login-with-wrong-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 2311964521,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1800783742,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I make login into the page",
+            "match": {
+              "location": "Test_Steps.makeLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "forrandomtestsandstuff@gmail.com",
+                  "Password123"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35208573,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "The login is wrong",
+            "match": {
+              "arguments": [
+                {
+                  "val": "wrong",
+                  "offset": 13
+                }
+              ],
+              "location": "Test_Steps.checkLogin(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "result"
+                ]
+              },
+              {
+                "cells": [
+                  "Your password is incorrect"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4844818858,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the page url",
+            "match": {
+              "location": "Test_Steps.openURL(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "url"
+                ]
+              },
+              {
+                "cells": [
+                  "http://www.amazon.co.uk"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Login with correct credentials",
+        "description": "",
+        "id": "amazon-search;login-with-correct-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 2325157455,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2509398382,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I make login into the page",
+            "match": {
+              "location": "Test_Steps.makeLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "forrandomtestsandstuff@gmail.com",
+                  "Password-12345"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 150375711,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "The login is correct",
+            "match": {
+              "arguments": [
+                {
+                  "val": "correct",
+                  "offset": 13
+                }
+              ],
+              "location": "Test_Steps.checkLogin(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "result"
+                ]
+              },
+              {
+                "cells": [
+                  "Hello, randomtestsandstuff"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4913256167,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the page url",
+            "match": {
+              "location": "Test_Steps.openURL(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "url"
+                ]
+              },
+              {
+                "cells": [
+                  "http://www.amazon.co.uk"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Search from book author",
+        "description": "",
+        "id": "amazon-search;search-from-book-author",
+        "after": [
+          {
+            "result": {
+              "duration": 2311084523,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2427622219,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I make login into the page",
+            "match": {
+              "location": "Test_Steps.makeLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "forrandomtestsandstuff@gmail.com",
+                  "Password-12345"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4222537812,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I make a search for a book",
+            "match": {
+              "location": "Test_Steps.search(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "search"
+                ]
+              },
+              {
+                "cells": [
+                  "Chasing Excellence"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 473505651,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I check the author",
+            "match": {
+              "location": "Test_Steps.author(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "author"
+                ]
+              },
+              {
+                "cells": [
+                  "Bergeron"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4810647723,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the page url",
+            "match": {
+              "location": "Test_Steps.openURL(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "url"
+                ]
+              },
+              {
+                "cells": [
+                  "http://www.amazon.co.uk"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 43,
+        "name": "Search from user comment",
+        "description": "",
+        "id": "amazon-search;search-from-user-comment",
+        "after": [
+          {
+            "result": {
+              "duration": 2310406764,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2738186422,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I make login into the page",
+            "match": {
+              "location": "Test_Steps.makeLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "forrandomtestsandstuff@gmail.com",
+                  "Password-12345"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3964468229,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "I make a search for a book",
+            "match": {
+              "location": "Test_Steps.search(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "search"
+                ]
+              },
+              {
+                "cells": [
+                  "Chasing Excellence"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18476787884,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "I search from user comment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user",
+                  "offset": 14
+                }
+              ],
+              "location": "Test_Steps.searchFrom(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "search"
+                ]
+              },
+              {
+                "cells": [
+                  "Cerith Leighton Watkins"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5067060671,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the page url",
+            "match": {
+              "location": "Test_Steps.openURL(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "url"
+                ]
+              },
+              {
+                "cells": [
+                  "http://www.amazon.co.uk"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 54,
+        "name": "Search from rating comment",
+        "description": "",
+        "id": "amazon-search;search-from-rating-comment",
+        "after": [
+          {
+            "result": {
+              "duration": 2311994281,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2502853115,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I make login into the page",
+            "match": {
+              "location": "Test_Steps.makeLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "forrandomtestsandstuff@gmail.com",
+                  "Password-12345"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4081440484,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I make a search for a book",
+            "match": {
+              "location": "Test_Steps.search(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "search"
+                ]
+              },
+              {
+                "cells": [
+                  "Chasing Excellence"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1021711638,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I search from rating comment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "rating",
+                  "offset": 14
+                }
+              ],
+              "location": "Test_Steps.searchFrom(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "search"
+                ]
+              },
+              {
+                "cells": [
+                  "1 star only"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4852710362,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the page url",
+            "match": {
+              "location": "Test_Steps.openURL(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "url"
+                ]
+              },
+              {
+                "cells": [
+                  "http://www.amazon.co.uk"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 65,
+        "name": "Search from date comment",
+        "description": "",
+        "id": "amazon-search;search-from-date-comment",
+        "after": [
+          {
+            "result": {
+              "duration": 2308603247,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2404612983,
+              "status": "passed"
+            },
+            "line": 66,
+            "name": "I make login into the page",
+            "match": {
+              "location": "Test_Steps.makeLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "forrandomtestsandstuff@gmail.com",
+                  "Password-12345"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4000331519,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I make a search for a book",
+            "match": {
+              "location": "Test_Steps.search(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "search"
+                ]
+              },
+              {
+                "cells": [
+                  "Chasing Excellence"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefinition.Test_Steps.searchFrom(Test_Steps.java:252)\r\n\tat ✽.I search from date comment(src/test/resource/Search.feature:72)\r\n",
+              "duration": 10368972411,
+              "status": "failed"
+            },
+            "line": 72,
+            "name": "I search from date comment",
+            "match": {
+              "arguments": [
+                {
+                  "val": "date",
+                  "offset": 14
+                }
+              ],
+              "location": "Test_Steps.searchFrom(String,DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "search"
+                ]
+              },
+              {
+                "cells": [
+                  "September 17, 2017"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4900948030,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the page url",
+            "match": {
+              "location": "Test_Steps.openURL(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "url"
+                ]
+              },
+              {
+                "cells": [
+                  "http://www.amazon.co.uk"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 76,
+        "name": "Perform a search",
+        "description": "",
+        "id": "amazon-search;perform-a-search",
+        "after": [
+          {
+            "result": {
+              "duration": 2313329959,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2818886428,
+              "status": "passed"
+            },
+            "line": 77,
+            "name": "I make login into the page",
+            "match": {
+              "location": "Test_Steps.makeLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "forrandomtestsandstuff@gmail.com",
+                  "Password-12345"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3768834044,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "I make a search",
+            "match": {
+              "location": "Test_Steps.movieSearch(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "search",
+                  "found"
+                ]
+              },
+              {
+                "cells": [
+                  "avengers",
+                  "Avengers Assemble"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 87940951,
+              "status": "passed"
+            },
+            "line": 83,
+            "name": "I search from description",
+            "match": {
+              "location": "Test_Steps.searchDescription(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "description"
+                ]
+              },
+              {
+                "cells": [
+                  "S.H.I.E.L.D"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5361986825,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open the page url",
+            "match": {
+              "location": "Test_Steps.openURL(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "url"
+                ]
+              },
+              {
+                "cells": [
+                  "http://www.amazon.co.uk"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 87,
+        "name": "Take a screenshot",
+        "description": "",
+        "id": "amazon-search;take-a-screenshot",
+        "after": [
+          {
+            "result": {
+              "duration": 2321176664,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Test_Steps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2508261424,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "I make login into the page",
+            "match": {
+              "location": "Test_Steps.makeLogin(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "forrandomtestsandstuff@gmail.com",
+                  "Password-12345"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3854488599,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "I make a search",
+            "match": {
+              "location": "Test_Steps.movieSearch(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "search",
+                  "found"
+                ]
+              },
+              {
+                "cells": [
+                  "avengers",
+                  "Avengers Assemble"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4527295308,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "I take a screenshot in the trailer",
+            "match": {
+              "location": "Test_Steps.takeScreenshot()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Amazon Search",
+    "description": "",
+    "id": "amazon-search",
+    "keyword": "Feature",
+    "uri": "src/test/resource/Search.feature",
+    "tags": []
+  }
+]
